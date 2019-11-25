@@ -14,6 +14,8 @@ namespace Anagrama
             Console.ReadKey();
         }
 
+        // ** Pode ser usado esse metodo para verificar cada palavra do anagrama **
+
         //public bool dictionaryEnglish(string wordToCheck)
         //{
         //    WordDictionary oDict = new WordDictionary();
