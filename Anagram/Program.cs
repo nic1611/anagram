@@ -40,7 +40,6 @@ namespace Anagrama
 
             string[] lines = System.IO.File.ReadAllLines(caminhoArquivo);
 
-            // Display the file contents by using a foreach loop.
             foreach (string line in lines)
             {
                 anagram(line);
@@ -59,6 +58,8 @@ namespace Anagrama
             int i = 0;
             int j = 0;
 
+
+            // ** aqui pode-se colocar qualquer valor, 120 irá pegar todos os anagramas de palavras com até 5 letras **
             while (i <= 120)
             {
                 while (compare.Contains(result))
