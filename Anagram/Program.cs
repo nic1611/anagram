@@ -1,6 +1,4 @@
 ﻿using System;
-using NetSpell.SpellChecker.Dictionary;
-using NetSpell.SpellChecker;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -16,22 +14,22 @@ namespace Anagrama
             Console.ReadKey();
         }
 
-        public bool dictionaryEnglish(string wordToCheck)
-        {
-            WordDictionary oDict = new WordDictionary();
+        //public bool dictionaryEnglish(string wordToCheck)
+        //{
+        //    WordDictionary oDict = new WordDictionary();
 
-            oDict.DictionaryFile = "en-US.dic";
-            oDict.Initialize();
-            Spelling oSpell = new Spelling();
+        //    oDict.DictionaryFile = "en-US.dic";
+        //    oDict.Initialize();
+        //    Spelling oSpell = new Spelling();
 
-            oSpell.Dictionary = oDict;
-            if (!oSpell.TestWord(wordToCheck))
-            {
-                //Word does not exist in dictionary
-                return false;
-            }
-            return true;
-        }
+        //    oSpell.Dictionary = oDict;
+        //    if (!oSpell.TestWord(wordToCheck))
+        //    {
+        //        //Word does not exist in dictionary
+        //        return false;
+        //    }
+        //    return true;
+        //}
 
         public void readArchive()
         {
